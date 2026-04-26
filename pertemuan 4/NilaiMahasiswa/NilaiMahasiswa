@@ -1,0 +1,25 @@
+print("=== Program Menghitung Nilai Mahasiswa ===")
+
+nama = input("Masukkan nama mahasiswa: ")
+kehadiran = int(input("Masukkan jumlah kehadiran: "))
+total_pertemuan = int(input("Masukkan jumlah realisasi pertemuan: "))
+tugas = float(input("Masukkan nilai tugas: "))
+uts = float(input("Masukkan nilai UTS: "))
+uas = float(input("Masukkan nilai UAS: "))
+
+# Perhitungan
+nilai_presensi = (kehadiran / total_pertemuan) * 10
+nilai_tugas = tugas * 0.2
+nilai_uts = uts * 0.3
+nilai_uas = uas * 0.4
+
+nilai_akhir = nilai_presensi + nilai_tugas + nilai_uts + nilai_uas
+
+# Output
+print("\n=== Hasil Nilai ===")
+print("Nama Mahasiswa :", nama)
+print("Nilai Presensi :", nilai_presensi)
+print("Nilai Tugas    :", nilai_tugas)
+print("Nilai UTS      :", nilai_uts)
+print("Nilai UAS      :", nilai_uas)
+print("Nilai Akhir    :", nilai_akhir)
